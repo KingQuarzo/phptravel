@@ -1,0 +1,291 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname"></span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="bcb0d089b936dbd9c63ab1dea3252847642b1e147b3322b34e9b3650cf43db34.html">Add Category</a></span>
+                > <span class="truncate-60"><a
+                    href="e570c467abf77021cd077345b542772d5c015e990dbfabdee81dc8b0513f50b2.html">Add Post </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 19-01-2021 18:12</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Add Category </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                As a user of phptravels<br />
+i want to use the webpage phptravels to<br />
+add a categories
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="4d534809d62aa55e8966824a949d3f99d0157c295d8a7779eb9bb166a40f19b8.html">Addpost
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></span>
+                            <span class="test-case-title">
+                                <span class="failing-color">Add Post
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Given he should logged in phptravels<br>When he create a new post<br><table class='embedded'><thead><th>posttitle</th><th>permalink</th><th>body</th><th>keywords</th><th>description</th><th>related</th></thead><tbody><tr><td>&lt;posttitle&gt;</td><td>&lt;permalink&gt;</td><td>&lt;body&gt;</td><td>&lt;keywords&gt;</td><td>&lt;description&gt;</td><td>&lt;related&gt;</td></tr></tbody></table><br>And he search the post<br><table class='embedded'><tbody><tr><td>posttitle</td></tr><tr><td>&lt;posttitle&gt;</td></tr></tbody></table><br>Then he will see that the post was created</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Element should be enabled exception: Expected enabled element was not enabled</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>co.com.phptravels.test.tasks.NewPost.performAs(NewPost.java:47)<br />co.com.phptravels.test.stepdefinitions.AddPostStepDefinition.heCreateANewPost(AddPostStepDefinition.java:18)<br />cucumber.runner.Runner.runPickle(Runner.java:80)<br /></pre>
+                    </div>
+
+                    <h4>
+                        Caused by: org.openqa.selenium.TimeoutException
+                    </h4>
+                    <div>
+                            <pre>Expected condition failed: waiting for By.xpath: //*[@value='20' and text()=' Escritura '] to be enabled (tried for 5 second(s) with 100 milliseconds interval)</pre>
+                        <pre>co.com.phptravels.test.tasks.NewPost.performAs(NewPost.java :47)<br />co.com.phptravels.test.stepdefinitions.AddPostStepDefinition.heCreateANewPost(AddPostStepDefinition.java :18)<br />cucumber.runner.Runner.runPickle(Runner.java :80)<br /></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource3464042368089487567.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="119312cc16370e0eca72c9d37e3eb19568b9870a25b436a85d42aaddfc12732f.png" title=" Example #1: {posttitle=Escritura, permalink=permalink, body=body, keywords=keywords, description=description, related=related}" width="1304"/>
+                <img src="119312cc16370e0eca72c9d37e3eb19568b9870a25b436a85d42aaddfc12732f.png" title=" Given he should logged in phptravels" width="1304"/>
+                <img src="119312cc16370e0eca72c9d37e3eb19568b9870a25b436a85d42aaddfc12732f.png" title=" Felipe login" width="1304"/>
+                <img src="119312cc16370e0eca72c9d37e3eb19568b9870a25b436a85d42aaddfc12732f.png" title=" Felipe enters 'admin@phptravels.com' into Test to insert email" width="1304"/>
+                <img src="adcfcafce92bbb1846edc828940eccdc66f2eaad289b1a6b037b2bd723e7f50c.png" title=" Felipe enters 'admin@phptravels.com' into Test to insert email (completed)" width="1304"/>
+                <img src="adcfcafce92bbb1846edc828940eccdc66f2eaad289b1a6b037b2bd723e7f50c.png" title=" Felipe enters 'demoadmin' into Text to insert passsword" width="1304"/>
+                <img src="c7503dae5d83a52e94be36f5980bf726c82027ea3be8bff7651c30fe21199566.png" title=" Felipe enters 'demoadmin' into Text to insert passsword (completed)" width="1304"/>
+                <img src="c7503dae5d83a52e94be36f5980bf726c82027ea3be8bff7651c30fe21199566.png" title=" Felipe clicks on Button to login" width="1304"/>
+                <img src="1073a8473d276d0352b9152d9f0d3262597f21fa74ba1a6d865c4b678b7aee46.png" title=" Felipe clicks on Button to login (completed)" width="1304"/>
+                <img src="1073a8473d276d0352b9152d9f0d3262597f21fa74ba1a6d865c4b678b7aee46.png" title=" Felipe login (completed)" width="1304"/>
+                <img src="1073a8473d276d0352b9152d9f0d3262597f21fa74ba1a6d865c4b678b7aee46.png" title=" Given he should logged in phptravels (completed)" width="1304"/>
+                <img src="1073a8473d276d0352b9152d9f0d3262597f21fa74ba1a6d865c4b678b7aee46.png" title=" When he create a new post
+| posttitle | permalink | body | keywords | description | related |
+| Escritura | permalink | body | keywords | description | related |" width="1304"/>
+                <img src="1073a8473d276d0352b9152d9f0d3262597f21fa74ba1a6d865c4b678b7aee46.png" title=" Felipe post" width="1304"/>
+                <img src="739ea6738420defeb8bc0a9246594c3492a26209a77399762bfea8efbfe917f0.png" title=" Felipe clicks on List to select diferents options" width="1304"/>
+                <img src="5635a1d43ff91c5d0cf1b676674b69788faea87e714de6e9709e4b65e6354fd1.png" title=" Felipe clicks on List to select diferents options (completed)" width="1304"/>
+                <img src="5635a1d43ff91c5d0cf1b676674b69788faea87e714de6e9709e4b65e6354fd1.png" title=" Felipe clicks on Option to create post" width="1304"/>
+                <img src="958ce50aa19c09e7807bd462e658955dde96c8b61d754467cf8e5f10925342d6.png" title=" Felipe clicks on Option to create post (completed)" width="1304"/>
+                <img src="958ce50aa19c09e7807bd462e658955dde96c8b61d754467cf8e5f10925342d6.png" title=" Felipe post (completed)" width="1304"/>
+                <img src="958ce50aa19c09e7807bd462e658955dde96c8b61d754467cf8e5f10925342d6.png" title=" Felipe new post" width="1304"/>
+                <img src="422adc8d8e3c7c17a95062accbdeadec35ecd4c4552550fefd99d11cc2f29456.png" title=" Felipe clicks on Option to create new post" width="1304"/>
+                <img src="f4c321e2e4e02948fb90e85388b1e8396163b4f347ed5ec85ebd89dd8d5b2856.png" title=" Felipe clicks on Option to create new post (completed)" width="1304"/>
+                <img src="f4c321e2e4e02948fb90e85388b1e8396163b4f347ed5ec85ebd89dd8d5b2856.png" title=" Felipe enters 'Escritura' into Option to create new post" width="1304"/>
+                <img src="bc6258011bc56863df1294bce756748469cd668b4086973fffa3438c609197c5.png" title=" Felipe enters 'Escritura' into Option to create new post (completed)" width="1304"/>
+                <img src="bc6258011bc56863df1294bce756748469cd668b4086973fffa3438c609197c5.png" title=" Felipe enters 'permalink' into Option to create new post" width="1304"/>
+                <img src="7dfb6c36e99616f37495e7c005eaf9b6ace074dc9b73b2e356b0669991e7c243.png" title=" Felipe enters 'permalink' into Option to create new post (completed)" width="1304"/>
+                <img src="7dfb6c36e99616f37495e7c005eaf9b6ace074dc9b73b2e356b0669991e7c243.png" title=" Felipe enters 'keywords' into Option to create new post" width="1304"/>
+                <img src="ef838868b3a79f41d8aee039adf7d3b14ffd9ae428cb5c1d8685ffe4ddd9b3dd.png" title=" Felipe enters 'keywords' into Option to create new post (completed)" width="1304"/>
+                <img src="ef838868b3a79f41d8aee039adf7d3b14ffd9ae428cb5c1d8685ffe4ddd9b3dd.png" title=" Felipe enters 'description' into Option to create new post" width="1304"/>
+                <img src="1eddd71d096a187bce331668fbc2d2df96ec7a8035c401690862c1b2720ff6ee.png" title=" Felipe enters 'description' into Option to create new post (completed)" width="1304"/>
+                <img src="1eddd71d096a187bce331668fbc2d2df96ec7a8035c401690862c1b2720ff6ee.png" title=" Felipe clicks on Option to create new post" width="1304"/>
+                <img src="83f3d488099b775bf1de7dae92625847c5f0c0e3224495c4dd7ef8b8a791e606.png" title=" Felipe clicks on Option to create new post (completed)" width="1304"/>
+                <img src="47806353f34da9621d7f6bf9aed9dc4b2a9fcb911d3f41d187306835860ec687.png" title=" Felipe clicks on Option to create new post" width="1304"/>
+                <img src="d2234a9ebd1717cb3eade186b40e5763214cb27887beb39965a7037294945011.png" title=" Felipe clicks on Option to create new post (completed): <span class='failing-color'>FAILURE</span>" width="1304"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.0.47</span>
+</div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group 'PhpTravels'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile 'net.serenity-bdd:serenity-core:2.3.7'
+    testCompile 'net.serenity-bdd:serenity-junit:2.3.7'
+    implementation "net.serenity-bdd:serenity-core:2.3.7"
+    implementation "net.serenity-bdd:serenity-junit:2.3.7"
+    implementation "net.serenity-bdd:serenity-cucumber:1.9.35"
+    implementation "net.serenity-bdd:serenity-screenplay:2.3.7"
+    implementation "net.serenity-bdd:serenity-screenplay-webdriver:2.3.7"
+}

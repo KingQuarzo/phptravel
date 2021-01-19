@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Add Category" skipped="0" tests="1" time="7.75" timestamp="2021-01-19 09:57:08"><testcase name=""><error message="net.serenitybdd.core.pages.WebElementFacade.type(Ljava/lang/String;)Lnet/serenitybdd/core/pages/WebElementFacade;" type="java.lang.NoSuchMethodError">net.serenitybdd.core.pages.WebElementFacade.type(Ljava/lang/String;)Lnet/serenitybdd/core/pages/WebElementFacade;</error><system-err>net.serenitybdd.core.pages.WebElementFacade.type(Ljava/lang/String;)Lnet/serenitybdd/core/pages/WebElementFacade;&#13;
+LoginPage.performAs(LoginPage.java:21)&#13;
+co.com.phptravels.test.stepdefinitions.AddCategoryStepDefinition.heShouldLoggedInPhptravels(AddCategoryStepDefinitions.java:29)&#13;
+cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
+</system-err></testcase></testsuite>
