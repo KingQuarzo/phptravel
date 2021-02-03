@@ -4,6 +4,9 @@ import net.serenitybdd.screenplay.targets.Target;
 
 public class PostPage {
 
+    public static final Target POST = Target.the("A new post Escritura")
+            .locatedBy("(//*[@href='https://www.phptravels.net/admin/blog/manage/Escritura'])[1]");
+
     public static final Target BTN_POST = Target.the("Option to create new post")
             .locatedBy("//*[@type='submit']");
 
@@ -11,7 +14,7 @@ public class PostPage {
             .locatedBy("//*[@name='category']");
 
     public static final Target CATEGORY = Target.the("Option to create new post")
-            .locatedBy("//*[@value='20' and text()=' Escritura ']");
+            .locatedBy("//*[@value='20' and contains(text(), 'Escritura')]");
 
     public static final Target LST_RELATED = Target.the("Option to create new post")
             .locatedBy("//*[@class='select2-input']");

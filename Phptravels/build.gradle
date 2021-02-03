@@ -1,22 +1,39 @@
-plugins {
-    id 'java'
-}
-
-group 'PhpTravels'
-version '1.0-SNAPSHOT'
-
-sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
 }
 
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath('net.serenity-bdd:serenity-gradle-plugin:2.0.45')
+    }
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java-library'
+apply plugin: 'idea'
+apply plugin: 'net.serenity-bdd.aggregator'
+
 dependencies {
-    testCompile 'net.serenity-bdd:serenity-core:2.3.7'
-    testCompile 'net.serenity-bdd:serenity-junit:2.3.7'
-    implementation "net.serenity-bdd:serenity-core:2.3.7"
-    implementation "net.serenity-bdd:serenity-junit:2.3.7"
+    testCompile 'net.serenity-bdd:serenity-core:2.0.45'
+    testCompile 'net.serenity-bdd:serenity-junit:2.0.45'
+    testCompile('junit:junit:4.12')
+    implementation "net.serenity-bdd:serenity-core:2.0.47"
+    implementation "net.serenity-bdd:serenity-junit:2.0.47"
     implementation "net.serenity-bdd:serenity-cucumber:1.9.35"
-    implementation "net.serenity-bdd:serenity-screenplay:2.3.7"
-    implementation "net.serenity-bdd:serenity-screenplay-webdriver:2.3.7"
+    implementation "net.serenity-bdd:serenity-screenplay:2.0.47"
+    implementation "net.serenity-bdd:serenity-screenplay-webdriver:2.0.47"
+}
+
+compileJava.options.encoding = 'UTF-8'
+
+gradle.startParameter.continueOnFailure = true
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
 }

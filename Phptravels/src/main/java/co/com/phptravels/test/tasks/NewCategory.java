@@ -24,9 +24,7 @@ public class NewCategory implements Task {
                 Click.on(BTN_GO)
 
         );
-        System.out.println(Text.of(RESULT).viewedBy(actor).asString());
-        actor.remember("result of category", Text.of(RESULT).viewedBy(actor).asString());
-
+        actor.remember("new category", Text.of(RESULT).viewedBy(actor).asString());
     }
 
 }

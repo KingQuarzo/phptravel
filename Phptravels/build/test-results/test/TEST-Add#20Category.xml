@@ -1,14 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Add Category" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-01-19T23:17:47" hostname="50HW015749" time="26.298">
+<testsuite name="Add Category" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-02-03T19:21:28" hostname="DESKTOP-PAAGGPT" time="26.241">
   <properties/>
-  <testcase name="Add Category" classname="Add Category" time="26.298"/>
-  <system-out><![CDATA[Escritura
+  <testcase name="Add Post" classname="Add Category" time="26.241"/>
+  <system-out><![CDATA[
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}) on port 24325
+  <system-err><![CDATA[Starting ChromeDriver 87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}) on port 46410
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jan 19, 2021 6:17:52 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
+[1612380089.988][WARNING]: This version of ChromeDriver has not been tested with Chrome version 88.
+feb 03, 2021 2:21:32 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
 ]]></system-err>
 </testsuite>

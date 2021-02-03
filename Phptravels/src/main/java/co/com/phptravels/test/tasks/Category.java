@@ -1,6 +1,5 @@
 package co.com.phptravels.test.tasks;
 
-import co.com.phptravels.test.models.Categories;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
@@ -10,8 +9,8 @@ import static co.com.phptravels.test.userinterfaces.Categories.*;
 
 public class Category implements Task {
 
-    private Categories categories;
-    public Category(Categories categories){
+    private co.com.phptravels.test.models.Category categories;
+    public Category(co.com.phptravels.test.models.Category categories){
         this.categories = categories;
     }
     @Override

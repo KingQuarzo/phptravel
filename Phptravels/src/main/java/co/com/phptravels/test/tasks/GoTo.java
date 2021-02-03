@@ -10,11 +10,13 @@ public class GoTo {
     public static Categories categories(){
         return Tasks.instrumented(Categories.class);
     }
+
     public static NewCategory searchCategory(String category){
         return Tasks.instrumented(NewCategory.class, category);
     }
 
-    public static Post post(){
-        return Tasks.instrumented(Post.class);
+    public static Posts post(){
+        return Tasks.instrumented(Posts.class);
     }
+
 }

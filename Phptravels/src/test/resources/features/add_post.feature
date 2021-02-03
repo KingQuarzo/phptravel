@@ -10,9 +10,7 @@ Feature: Add Category
       | posttitle   | permalink   | body   | keywords   | description   | related   |
       | <posttitle> | <permalink> | <body> | <keywords> | <description> | <related> |
     And he search the post
-      | posttitle   |
-      | <posttitle> |
     Then he will see that the post was created
     Examples:
-      | posttitle | permalink | body | keywords | description | related |
-      | Escritura | permalink | body | keywords | description | related |
+      | posttitle | permalink | body    | keywords | description | related |
+      | Escritura | permalink | This is | keywords | description | related |

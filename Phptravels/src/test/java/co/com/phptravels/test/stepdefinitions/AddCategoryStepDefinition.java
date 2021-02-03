@@ -1,9 +1,10 @@
 package co.com.phptravels.test.stepdefinitions;
 
+import co.com.phptravels.test.questions.TheCategory;
 import co.com.phptravels.test.tasks.Create;
 import co.com.phptravels.test.tasks.GoTo;
 import co.com.phptravels.test.tasks.Login;
-import co.com.phptravels.test.models.Categories;
+import co.com.phptravels.test.models.Category;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -16,6 +17,7 @@ import java.util.List;
 
 import static co.com.phptravels.test.utils.drivers.OwnRemoteWebDriver.hisBrowserWeb;
 import static co.com.phptravels.test.utils.drivers.OwnRemoteWebDriver.on;
+import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
 public class AddCategoryStepDefinition {
@@ -35,7 +37,7 @@ public class AddCategoryStepDefinition {
     }
 
     @When("^he create a new category$")
-    public void heCreateANewCategory(List<Categories> categories) {
+    public void heCreateANewCategory(List<Category> categories) {
 
         theActorInTheSpotlight().attemptsTo(GoTo.categories());
         theActorInTheSpotlight().attemptsTo(Create.category(categories.get(0)));
@@ -48,6 +50,7 @@ public class AddCategoryStepDefinition {
 
     @Then("^he will see that the category was created$")
     public void heWillSeeThatTheCategoryWasCreated() {
+        OnStage.theActorInTheSpotlight().should(seeThat(TheCategory.wasCreated()));
     }
 
 }

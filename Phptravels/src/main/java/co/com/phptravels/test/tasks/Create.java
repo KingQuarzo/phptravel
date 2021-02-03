@@ -1,7 +1,6 @@
 package co.com.phptravels.test.tasks;
 
-import co.com.phptravels.test.models.Categories;
-import co.com.phptravels.test.models.Post;
+import co.com.phptravels.test.models.Category;
 import net.serenitybdd.screenplay.Tasks;
 
 public class Create {
@@ -9,11 +8,11 @@ public class Create {
     private Create() {
     }
 
-    public static Category category(Categories categories) {
-        return Tasks.instrumented(Category.class, categories);
+    public static co.com.phptravels.test.tasks.Category category(Category categories) {
+        return Tasks.instrumented(co.com.phptravels.test.tasks.Category.class, categories);
     }
 
-    public static NewPost post(Post post) {
-        return Tasks.instrumented(NewPost.class, post);
+    public static Post post(co.com.phptravels.test.models.Post post) {
+        return Tasks.instrumented(Post.class, post);
     }
 }
